@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - Text Shadow</title>
+    <style>
+        .para
+        {
+            font-size: 20px;
+/*            text-shadow: 5px 2px 3px red;*/
+/*            text-shadow: 0px 0px 3px red;*/
+            text-shadow: 0px 0px 3px red, 0px 0px 3px blue;
+            
+        }
+        .para1
+        {
+            font-size: 20px;
+            color: white;
+            text-shadow: 0px 0px 3px black;
+        }
+        .para2
+        {
+            font-size: 20px;
+            color: white;
+            text-shadow: -3px -3px 3px black;
+        }
+        .div1
+        {
+            width: 10%;
+            height: 100px;
+            background-color: beige;
+            margin: 20px 10%;
+            
+        }
+        .div1:hover
+        {
+            box-shadow: 0px 0px 5px black;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <p class="para">Text Shadow effect</p>
+    <p class="para1">Text Shadow effect</p>
+    <p class="para2">Text Shadow effect</p>
+    
+    <div class="div1"></div>
+</body>
+</html>

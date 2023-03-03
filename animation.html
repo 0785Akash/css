@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - Animation</title>
+    <style>
+        .div1
+        {
+            width: 10%;
+            height: 100px;
+            background-color: red;
+            animation-name: myanimation;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            position: relative;
+            top: 20px;
+        }
+        @keyframes myanimation
+        {
+/*
+            0%{background-color: red; left: 0%;}
+            100%{background-color: yellow; left: 40%}
+*/
+            0%{background-color: red;}
+            25%{background-color: yellow;}
+            50%{background-color: yellowgreen;}
+            75%{background-color: saddlebrown;}
+            100%{background-color: bisque;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div1">
+        
+    </div>
+</body>
+</html>

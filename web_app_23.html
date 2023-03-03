@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            outline: 0px;
+            padding: 0px;
+        }
+        .con{
+            position: sticky;
+            top: 0px;
+            display: flex;
+            width: 100%;
+            height: 15vh;
+            justify-content: space-between;
+            align-items: center;
+            background-color:rgb(20, 144, 150);
+        }
+        .left img{
+            width: 150px;
+            height: 60px;
+            margin:10px
+        }
+        .right{
+            display: flex;
+        }
+        .right div{
+            padding-right: 20px;
+        }
+        .right div a{
+            color: black;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .right div a:hover{
+           color:  aquamarine;
+            transition: 0.5s;
+        }
+        .icon{
+            position: relative;
+            width: 5px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid black;
+            padding-left: 14px;
+            padding-top: 10px;
+            padding-bottom: 6px;
+        }
+        .icon  span{
+            position: absolute;
+            font-size: 50px;
+            color:green;
+            text-decoration: none;
+            top: -39px;
+            left: 15px;
+        }
+        .ban{
+            width: 100%;
+            height: 80vh;
+            /* background: linear-gradient(rgba(100,20,19,0.7),rgba(100,20,19,0.7),url("images/bg.jpg")); */
+            /* background-size: 100%; */
+            background: linear-gradient(rgba(100,100,20,0.7),rgba(100,20,30,0.7)),url('./images/sunset-1373171__480.jpg');
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont{
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+            justify-content: space-between;
+            align-items: center;           
+        }
+        .cont h1{
+            font-size: 30px;
+            color: whitesmoke;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .cont h1:hover{
+            color: aquamarine;
+            transition: 1s;
+        }
+        .cont p:hover,button:hover{
+            color: aquamarine;
+            transition: 1s;
+        }
+        .btn{
+            font-size: 16px;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 5px 10px;
+            background: transparent;
+        }
+        .ftr{
+            width: 100%;
+            height: 10vh;
+            text-align: center;
+            background-color:rgb(20, 144, 150);
+        }
+        .ftr div{
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 16px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="left"><img src="images/Boots_logo_PNG2.png"/></div>
+        <div class="right">
+            <div class="menu">
+                <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+            </div>
+            <div><a href="https://www.vectorindia.org"><i class="fa-sharp fa-solid fa-circle-info"></i>about</a></div>
+            <div><a href="#">Contactus</a></div>
+            <div><a href="#">Login</a></div>
+            <div class="icon">
+                <a href="#" alt="img"><i class="fa-solid fa-user"></i>
+                </a>
+                <span>.</span>
+            <div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="ban">
+        <div class="cont">
+            <h1>Leading Institute...</h1>
+            <p>No.1 Institute come and join.</p>
+            <button class="btn">Click</button>
+        </div>        
+    </div>
+    <footer class="ftr">
+        <div>@copyright reserved</div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lms_flex</title>
+    <style>
+        *{
+            margin: 0px;
+            outline: 0px;
+            padding: 0px;
+        }
+        .main{
+            width: 100%;
+            
+            background-image: url('./images/images-bg.jpg');
+            background-size: 100% 100%;
+            height: 100vh;
+        }
+        .cont{
+            width: 25%;
+            margin: auto;
+            background: linear-gradient(rgba(60, 164, 116, 0.801),rgba(60, 164, 116, 0.801)),url('./images/bg2.jpg');
+            height: 80vh;
+            position: relative;
+            top: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 3px 3px rgb(69, 187, 97); 
+        }
+        .cont h1{
+            font-size: 20px;
+            color: whitesmoke;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .cont .user input,.pass input{
+            background: none;
+            text-align: center;
+            border: 1px solid whitesmoke;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+            color: whitesmoke;
+            padding: 5px;
+        }
+        .userl button{
+            background: none;
+            text-align: center;
+            border: 1px solid whitesmoke;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-size: 14px;
+            color: whitesmoke;
+            padding: 5px 75px;
+        }
+        .user input::placeholder,.pass input::placeholder{
+            color: whitesmoke;
+        }
+        .userl input::placeholder{
+            color: coral;
+        }
+        .userl .btn{
+            background: none;
+            text-align: center;
+            border: 1px solid whitesmoke;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-size: 14px;
+            color: whitesmoke;
+            padding: 5px 65px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cont">
+            <h1>Login</h1>
+            <form>
+                <div class="user"><input type="text" placeholder="UserId"/></div>
+                <div class="pass"><input type="password" placeholder="Password"/></div>
+                <div class="userl"><button type="submit" value="ok">Login</button></div>
+                <div class="userl"><button type="submit" value="ok" class="btn">IamNEW</button></div>
+            </form>
+            
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

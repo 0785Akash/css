@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - Media queries</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+/*
+        @media not|only mediatype and (expressions)
+        {
+            selector
+            {
+                css properties;
+            }
+        }
+        media type: all,print,speech,screen
+        expressions: max-width(in px ) / min-width(in px)
+        <576px(xs - mobile device)
+        >=576px (sm - mobile device)
+        >=768px (md - tab device)
+        >=992px (lg - Desktop/Laptop device)
+        >=1200px (xl - smart tv)
+*/
+/*        for xl device*/
+        body
+        {
+            background-color: bisque;
+        }
+         /* for lg device (D/L) */
+        @media only screen and (max-width:1200px)
+        {
+            body
+            {
+                background-color: pink;
+            }
+        }
+        /* for md device (Tab) */
+        @media only screen and (max-width:992px)
+        {
+            body
+            {
+                background-color: yellowgreen;
+            }
+        }
+        /* for sm device (mobile / Tab) */
+        @media only screen and (max-width:768px)
+        {
+            body
+            {
+                background-color: yellow;
+            }
+        }
+        /* for XS device (mobile) */
+        @media only screen and (max-width:576px)
+        {
+            body
+            {
+                background-color: aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

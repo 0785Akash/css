@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Pseudo Elements</title>
+    <style>
+        p::first-letter
+        {
+            font-size: 20px;
+            color: red;
+            font-family: cursive;
+        }
+/*
+        .span1
+        {
+        color: aqua;
+        }
+*/
+        p::first-line
+        {
+            color: aqua;
+        }
+        ::selection
+        {
+            background-color: rgb(133, 31, 31);
+            color: black;
+        }
+        p::after
+        {
+           content: "-"; 
+        }
+        p::before
+        {
+/*            content: "-";*/
+            content: url('./images/bg.jpg');
+        }
+        .test li::marker
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p><span class="span1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque veniam officia modi similique, quos quidem vitae beatae repellendus dolorem dignissimos accusantium fugiat ex soluta quae ipsam voluptate</span> nobis inventore, tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit excepturi expedita sequi vitae in, ullam ducimus. Quibusdam molestiae nobis, enim a assumenda eos ex numquam adipisci similique quis repellat voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto placeat, asperiores, esse aut possimus harum adipisci, assumenda quia dolores aliquam hic enim. Sed, atque tenetur rem esse accusantium nesciunt inventore.</p>
+    <h1>Heading Text</h1>
+    <ul class="test">
+        <li>Home</li>
+        <li>AboutUs</li>
+        <li>ContactUs</li>
+    </ul>
+</body>
+</html>

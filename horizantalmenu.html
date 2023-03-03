@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Horizontal Menu</title>
+    <style>
+        body,ul
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .menu
+        {
+            width: 100%;
+            float: left;
+            background-color: gainsboro;
+/*            padding: 10px 0px;*/
+            
+        }
+        .menu ul
+        {
+/*            list-style-position: inside;*/
+            list-style-type: none;
+        }
+        /*descendant selector*/
+        .menu ul li
+        {
+/*            display: inline-block;*/
+            float: left;
+        }
+        .menu ul li a
+        {
+            color: black;
+            text-decoration: none;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            display: block;
+        }
+        .menu ul li a:hover
+        {
+            background-color: black;
+            color: white;
+        }
+        .dropdownmenu
+        {
+            display: none;
+        }
+        .menu ul li:hover .dropdownmenu
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a>
+                <ul class="dropdownmenu">
+                    <li><a href="#">FE Technologies</a></li>
+                    <li><a href="#">BE Technologies</a></li>
+                </ul>
+            </li>
+            <li><a href="#">AboutUs</a></li>
+            <li><a href="#">ContactUs</a></li>
+        </ul>
+    </div>
+    
+<!--
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li>AboutUs</li>
+        <li>ContactUs</li>
+    </ul>
+-->
+</body>
+</html>

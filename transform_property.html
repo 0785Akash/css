@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 - Transform property</title>
+    <style>
+        /*
+        transform: scale(),skew(),rotate(),translate()
+        */
+        .div1
+        {
+            width: 10%;
+            height: 100px;
+            background-color: aquamarine;
+            margin: 100px 20%;
+/*            transition: height 2s,width 2s;*/
+            transition: transform 2s;
+        }
+        .div1:hover
+        {
+/*
+            height: 200px;
+            width: 20%;
+*/
+           /* transform: rotate(360deg); */
+           transform: scale(1.2,1.5);
+/*            transform: scaleX(2)*/
+/*            transform: scaleY(2);*/
+/*            transform:translate(30px,40px)*/
+            /* transform: translatey(40px);
+            transform: translatex(40px); */
+/*            transform: skew(30deg,50deg)*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div1">
+    Transform
+    </div>
+</body>
+</html>

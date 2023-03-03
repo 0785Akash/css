@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_relative</title>
+    <style>
+        *{
+            margin: 0px;
+            outline: 0px;
+        }
+        #div1{
+            width: 100px;
+            height: 50px;
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 20px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        #div2{
+            width: 100px;
+            height: 50px;
+            background-color:red;
+            border: 2px solid black;
+            margin: 20px;
+            position: absolute;
+            top: 40px;
+            left: 20px;
+        }
+        #div3{
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            border: 2px solid black;
+            margin: 20px;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+        }
+        #div4{
+            width: 100px;
+            height: 50px;
+            background-color: purple;
+            border: 2px solid black;
+            margin: 20px;
+            position: absolute;
+            top: 80px;
+            left: 20px;
+        }
+        #div5{
+            width: 50%;
+            height: 50vh;
+            background-color: purple;
+            border: 2px solid black;
+            margin: 20px;
+            position: relative;
+            top: 80px;
+            left: 20px;
+        }
+        #div5>div{
+            width: 200px;
+            height: 30vh;
+            background-color: orange;
+            border: 2px solid black;
+            margin: 20px;
+            position: absolute;
+            top: 60px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">Div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    <div id="div4">div4</div>
+    <div id="div5">div5
+        <div></div>
+    </div>
+</body>
+</html>

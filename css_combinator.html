@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators</title>
+    <style>
+        /* Descendant Selector (space)*/
+/*
+        .container p
+        {
+            color: red;
+        }
+*/
+        
+        /* child Selector (>) */
+/*
+        .container>p
+        {
+            color: red;
+        }
+*/
+        
+        /* adjacent sibling selector (+) */
+/*
+        .container+p
+        {
+            color: red;
+        }
+*/
+        /* general sibling selector (~) */
+        .container~p
+        {
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>This is a Paragraph1</p>
+        <span><p>This is a Paragraph2</p></span>
+        <p>This is a Paragraph3</p>
+    </div>
+    <h4>CSS Combinators</h4>
+    <p>This is a Paragraph4.</p>
+    <p>This is a Paragraph5.</p>
+</body>
+</html>

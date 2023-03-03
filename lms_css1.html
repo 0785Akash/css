@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            outline: 0px;
+            padding: 0px;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            background-image: url('./images/beans.jpg');
+            background-size: cover;
+        }
+        .cont{
+            width: 30%;
+            height: 95vh;
+            position: relative;
+            top: 20px;
+            left: 400px;
+            background-color:rgb(219, 172, 114);
+        }
+        .top,.middle,.bottom{
+            width: 90%;
+            text-align: center; 
+            border-bottom: 4px solid rgba(255, 0, 0, 0.646);
+            margin: 10px 5%;
+            padding: 10px 0px;
+        }
+        .top h2{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+
+        }
+        .top p{
+            font-style: italic;
+        }
+        .middle h3,.bottom h3{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .footer{
+            width: 90%;
+            text-align: center; 
+            margin: 10px 5%;
+            padding: 10px 0px;
+        }
+        .footer a{
+            color: black;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cont">
+            <div class="top">
+                <h2>CAMPER CAFE</h2>
+                <p>EST.2020</p>
+            </div>   
+            <div class="middle">
+                <h3>Coffee</h3>
+                <img src="./images/coffee.jpg"/>
+                <div class="midtext">
+                    <pre>French Vannila                             3.00</pre>
+                    <pre>Caramel Macchiato                          3.75</pre>
+                    <pre>PumpKin Spice                              3.50</pre>
+                    <pre>Hazelnut                                   4.00</pre>
+                    <pre>Mocha                                      4.50</pre>
+                </div>
+            </div> 
+            <div class="bottom">
+                <h3>Desserts</h3>
+                <img src="./images/coffee.jpg"/>
+                <div class="bottomtext">
+                    <pre>DONUT                                      1.50</pre>
+                    <pre>Cherry Pie                                 2.75</pre>
+                    <pre>CheeseCake                                 3.00</pre>
+                    <pre>Cinnamon Roll                              2.50</pre>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="#"><h4>Visit Our Website</h4></a>
+                <p>123 Free Code Camp Drive</p>
+
+            </div>       
+        </div>
+    </div>
+    
+</body>
+</html>
